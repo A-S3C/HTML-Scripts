@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=0.9">
+<title>Inspiration | Custom Bot Making</title>
+<meta content="Inspiration | Custom Bot Making" property="og:title" />
+<meta content="Getting a custom discord bot made easy!" property="og:description" />
+<meta content="https://www.inspirationbot.co.uk/" property="og:url" />
+<meta content="https://cdn.discordapp.com/attachments/929128954080665630/994646466050142358/logo.png" property="og:image" />
+<meta content="#7011e7" data-react-helmet="true" name="theme-color" />
+<link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+</head>
+
+
+
+
+
+<body style="background-color:#2c2f33;">
+
+<script>
+
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+
+</script>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 33%;
+  padding: 0 4px;
+}
+.column2 {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2c2f31;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7011e7;
+}
+
+/* Style the sidebar - fixed full height */
+/* Style the sidebar - fixed full height */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 190px;
+  overflow: visible;
+  z-index: 1;
+  background-color: #111;
+  transition: left 0.3s ease, width 0.3s ease;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+
+.menu>li {
+  width: 100%;
+  list-style: none;
+  margin-left: -30px;
+
+}
+
+.menu>li>a {
+  color: #818181;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+}
+
+.menu>li:not(.bottom)+.bottom {
+  margin-top: auto;
+}
+
+.menu a:hover {
+  color: #f1f1f1;
+  border-left: 3px solid #7011e7;
+}
+.sidebar:hover {
+  color: #f1f1f1;
+}
+
+
+.menu a.active {
+  border-left: 3px solid #7011e7;
+}
+/* Style the main content */
+.main {
+
+  color: #ffffff;
+}
+
+.pastside {
+margin-left: 190px;
+padding: 0px 10px;
+}
+
+.onside {
+margin-left: 150px;
+}
+
+
+#myInput {
+  background-image: url('search.png');
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #7011e7; /* Add a grey border */
+  text-align: left; /* Left-align text */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #7011e7; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #7011e7;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #23272A;
+}
+
+.myHeading img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:2px;
+}
+
+</style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fontawesome.com/v6.0/icons/discord?s=brands">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- The sidebar -->
+  <div class="sidebar">
+    <ul class="menu">
+      <li><a href="../index" class=""><i class="fa fa-fw fa-home"></i> Home</a></li>
+      <li><a href="../status" class=""><i class="fa fa-desktop"></i> Status</a></li>
+      <li><a href="packs"><i class="fa fa-fw fa-wrench"></i> Packs</a></li>
+      <li><a href="bots"><i class="fa fa-fw fa-user"></i> Bot Types</a></li>
+      <li><a href="boostperks"><i class="far fa-gem"></i> Boost Perks</a></li>
+      <li><a href="commands" class="active"><i class="fa fa-code"></i> Commands</a></li>
+      <li><a href="colourpicker"><i class="fa fa-hashtag"></i> Hex Picker</a></li>
+      <li class="bottom"><a href="discord" target= "_blank" class=""><i class="fab fa-discord"></i> Discord</a></li>
+      <li class="bottom"><a href="github" target= "_blank" class=""><i class="fab fa-github"></i> Github</a></li>
+      <li class="bottom"><a href="contact" class=""><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+    </ul>
+  </div>
+
+  <div class = "main pastside">
+    <div class = "myHeading">
+    <h1 style = "text-align: center; color:#ffffff; font-family:playlist script;font-size:40px;font-style:italic; ">Commands</h1>
+    </div>
+    <table id="myTable">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a command..">
+      <tr class="header">
+        <th style="width:20%;">Command</th>
+        <th style="width:55%;">Format</th>
+        <th style="width:25%;">Pack / Bot Type</th>
+      </tr>
+      <tr>
+        <td>help</td>
+        <td>!help [page_number | optional]</td>
+        <td>Help</td>
+      </tr>
+      <tr>
+        <td>warn</td>
+        <td>!warn [@member] [reason]</td>
+        <td>Moderation</td>
+      </tr>
+      <tr>
+        <td>kick</td>
+        <td>!kick [@member] [reason]</td>
+        <td>Moderation</td>
+      </tr>
+      <tr>
+        <td>ban</td>
+        <td>!ban [@member] [reason]</td>
+        <td>Moderation</td>
+      </tr>
+      <tr>
+        <td>unban</td>
+        <td>!unban [@member]</td>
+        <td>Moderation</td>
+      </tr>
+      <tr>
+        <td>hackban</td>
+        <td>!hackban [member_id] [reason]</td>
+        <td>Moderation</td>
+      </tr>
+      <tr>
+        <td>mute</td>
+        <td>!mute [@member] [reason]</td>
+        <td>Moderation</td>
+      </tr>
+      <tr>
+        <td>unmute</td>
+        <td>!unmute [@member]</td>
+        <td>Moderation</td>
+      </tr>
+      <tr>
+        <td>purge</td>
+        <td>!purge [number | max=50] [@member | optional]</td>
+        <td>Moderation</td>
+      </tr>
+      <tr>
+        <td>lock</td>
+        <td>!lock [role | optional]</td>
+        <td>Moderation</td>
+      </tr>
+      <tr>
+        <td>unlock</td>
+        <td>!unlock [role | optional]</td>
+        <td>Moderation</td>
+      </tr>
+      <tr>
+        <td>massban</td>
+        <td>!massban [@members] [reason]</td>
+        <td>Advanced Moderation</td>
+      </tr>
+      <tr>
+        <td>find</td>
+        <td>!find [search]</td>
+        <td>Advanced Moderation</td>
+      </tr>
+      <tr>
+        <td>quarentine</td>
+        <td>!quarentine [@member]</td>
+        <td>Advanced Moderation</td>
+      </tr>
+      <tr>
+        <td>softban</td>
+        <td>!softban [@member] [reason]</td>
+        <td>Advanced Moderation</td>
+      </tr>
+      <tr>
+        <td>masskick</td>
+        <td>!masskick [@members] [reason]</td>
+        <td><span style=color:#FFDB51;>New! </span>Advanced Moderation</td>
+      </tr>
+      <tr>
+        <td>bannedusers</td>
+        <td>!bannedusers</td>
+        <td><span style=color:#FFDB51;>New! </span>Advanced Moderation</td>
+      </tr>
+      <tr>
+        <td>announce</td>
+        <td>!announce [#channel] [message]</td>
+        <td>Utility</td>
+      </tr>
+      <tr>
+        <td>quote</td>
+        <td>!quote [#channel] [title]</td>
+        <td>Utility</td>
+      </tr>
+      <tr>
+        <td>say</td>
+        <td>!say [message]</td>
+        <td>Utility</td>
+      </tr>
+      <tr>
+        <td>nickname</td>
+        <td>!nickname [@member] [name]</td>
+        <td>Utility</td>
+      </tr>
+      <tr>
+        <td>avatar</td>
+        <td>!avatar [@member]</td>
+        <td>Utility</td>
+      </tr>
+      <tr>
+        <td>jumbo</td>
+        <td>!jumbo [emoji]</td>
+        <td>Utility</td>
+      </tr>
+      <tr>
+        <td>react</td>
+        <td>!react [message_id] [emoji]</td>
+        <td>Utility</td>
+      </tr>
+      <tr>
+        <td>colour</td>
+        <td>!colour [hex]</td>
+        <td>Utility</td>
+      </tr>
+      <tr>
+        <td>selfbot</td>
+        <td>!selfbot [message] </td>
+        <td>Utility</td>
+      </tr>
+      <tr>
+        <td>addemoji</td>
+        <td>!addemoji [name] </td>
+        <td>Utility</td>
+      </tr>
+      <tr>
+        <td>membercount</td>
+        <td>!membercount</td>
+        <td><span style=color:#FFDB51;>New! </span>Utility</td>
+      </tr>
+      <tr>
+        <td>servericon</td>
+        <td>!servericon</td>
+        <td><span style=color:#FFDB51;>New! </span>Utility</td>
+      </tr>
+      <tr>
+        <td>createwebhook</td>
+        <td>!createwebhook [name]</td>
+        <td><span style=color:#FFDB51;>New! </span>Utility</td>
+      </tr>
+      <tr>
+        <td>createinvite</td>
+        <td>!createinvite [#channel] </td>
+        <td>Channel</td>
+      </tr>
+      <tr>
+        <td>slowmode</td>
+        <td>!slowmode [#channel] [number]</td>
+        <td>Channel</td>
+      </tr>
+      <tr>
+        <td>createchannel</td>
+        <td>!createchannel [text/voice/category] [name]</td>
+        <td>Channel</td>
+      </tr>
+      <tr>
+        <td>deletechannel</td>
+        <td>!deletechannel [name]</td>
+        <td>Channel</td>
+      </tr>
+      <tr>
+        <td>replace</td>
+        <td>!replace [channel_type] [channel_name]</td>
+        <td><span style=color:#FFDB51;>New! </span>Channel</td>
+      </tr>
+      <tr>
+        <td>channeltopic</td>
+        <td>!channeltopic [new_topic]</td>
+        <td><span style=color:#FFDB51;>New! </span>Channel</td>
+      </tr>
+      <tr>
+        <td>clone</td>
+        <td>!clone [channel_type] [channel_name]</td>
+        <td><span style=color:#FFDB51;>New! </span>Channel</td>
+      </tr>
+      <tr>
+        <td>channelname</td>
+        <td>!channelname [new_name]</td>
+        <td><span style=color:#FFDB51;>New! </span>Channel</td>
+      </tr>
+      <tr>
+        <td>addrole</td>
+        <td>!addrole [@member] [role]</td>
+        <td>Role</td>
+      </tr>
+      <tr>
+        <td>removerole</td>
+        <td>!removerole [@member] [role]</td>
+        <td>Role</td>
+      </tr>
+      <tr>
+        <td>createrole</td>
+        <td>!createrole [name]</td>
+        <td>Role</td>
+      </tr>
+      <tr>
+        <td>rolecolour</td>
+        <td>!rolecolour [rolename]</td>
+        <td>Role</td>
+      </tr>
+      <tr>
+        <td>rolecount</td>
+        <td>!rolecount [rolename]</td>
+        <td>Role</td>
+      </tr>
+      <tr>
+        <td>deleterole</td>
+        <td>!deleterole [role]</td>
+        <td>Role</td>
+      </tr>
+      <tr>
+        <td>rolename</td>
+        <td>!rolename [role] [new_name]</td>
+        <td><span style=color:#FFDB51;>New! </span>Role</td>
+      </tr>
+      <tr>
+        <td>userinfo</td>
+        <td>!userinfo [@member] </td>
+        <td>Info</td>
+      </tr>
+      <tr>
+        <td>serverinfo</td>
+        <td>!serverinfo</td>
+        <td>Info</td>
+      </tr>
+      <tr>
+        <td>roleinfo</td>
+        <td>!roleinfo [serverid] [rolename]</td>
+        <td>Info</td>
+      </tr>
+      <tr>
+        <td>channelinfo</td>
+        <td>!channelinfo [#channel]</td>
+        <td>Info</td>
+      </tr>
+      <tr>
+        <td>botinfo</td>
+        <td>!botinfo</td>
+        <td>Info</td>
+      </tr>
+      <tr>
+        <td>invites</td>
+        <td>!invites [@member]</td>
+        <td>Info</td>
+      </tr>
+      <tr>
+        <td>emojifo</td>
+        <td>!emojifo [emoji]</td>
+        <td><span style=color:#FFDB51;>New! </span>Info</td>
+      </tr>
+      <tr>
+        <td>rolemembers</td>
+        <td>!rolemembers [role]</td>
+        <td>List</td>
+      </tr>
+      <tr>
+        <td>allroles</td>
+        <td>!allroles</td>
+        <td>List</td>
+      </tr>
+      <tr>
+        <td>allchannels</td>
+        <td>!allchannels</td>
+        <td>List</td>
+      </tr>
+      <tr>
+        <td>allcategories</td>
+        <td>!allcategories</td>
+        <td>List</td>
+      </tr>
+      <tr>
+        <td>allemojis</td>
+        <td>!allemojis</td>
+        <td>List</td>
+      </tr>
+      <tr>
+        <td>allbots</td>
+        <td>!allbots</td>
+        <td>List</td>
+      </tr>
+      <tr>
+        <td>apply</td>
+        <td>!apply</td>
+        <td>Application</td>
+      </tr>
+      <tr>
+        <td>accept</td>
+        <td>!accept [@member]</td>
+        <td>Application</td>
+      </tr>
+      <tr>
+        <td>reject</td>
+        <td>!reject [@member]</td>
+        <td>Application</td>
+      </tr>
+      <tr>
+        <td>ticket</td>
+        <td>!ticket</td>
+        <td>Ticket</td>
+      </tr>
+      <tr>
+        <td>report</td>
+        <td>!report</td>
+        <td>Ticket</td>
+      </tr>
+      <tr>
+        <td>vcticket</td>
+        <td>!vcticket</td>
+        <td>Ticket</td>
+      </tr>
+      <tr>
+        <td>close</td>
+        <td>!close</td>
+        <td>Ticket</td>
+      </tr>
+      <tr>
+        <td>setup_feedback</td>
+        <td>!setup_feedback</td>
+        <td>Feedback</td>
+      </tr>
+      <tr>
+        <td>review</td>
+        <td>!review</td>
+        <td>Feedback</td>
+      </tr>
+      <tr>
+        <td>suggest</td>
+        <td>!suggest [message]</td>
+        <td>Feedback</td>
+      </tr>
+    <tr>
+      <td>event</td>
+      <td>!event [#channel] [message]</td>
+      <td>Events</td>
+    </tr>
+    <tr>
+      <td>giveaway</td>
+      <td>!giveaway [prize]</td>
+      <td>Events</td>
+    </tr>
+    <tr>
+      <td>winner</td>
+      <td>!winner [message_id]</td>
+      <td>Events</td>
+    </tr>
+    <tr>
+      <td>poll</td>
+      <td>!poll [title]</td>
+      <td>Events</td>
+    </tr>
+    <tr>
+      <td>birthday</td>
+      <td>!birthday [@member]</td>
+      <td><span style=color:#FFDB51;>New! </span>Events</td>
+    </tr>
+    <tr>
+      <td>setupcolour</td>
+      <td>!setupcolour</td>
+      <td>Colour</td>
+    </tr>
+    <tr>
+      <td>colours</td>
+      <td>!colours</td>
+      <td>Colour</td>
+    </tr>
+    <tr>
+      <td>pick</td>
+      <td>!pick [colour]</td>
+      <td>Colour</td>
+    </tr>
+    <tr>
+      <td>removecolour</td>
+      <td>!removecolour</td>
+      <td>Colour</td>
+    </tr>
+    <tr>
+      <td>embed</td>
+      <td>!embed [embed_string]</td>
+      <td>Program</td>
+    </tr>
+    <tr>
+      <td>embed_format</td>
+      <td>!embed_format</td>
+      <td>Program</td>
+    </tr>
+    <tr>
+      <td>editembed</td>
+      <td>!editembed [embed_string]</td>
+      <td><span style=color:#FFDB51;>New! </span>Program</td>
+    </tr>
+    <tr>
+      <td>codeblock</td>
+      <td>!codeblock [message_id]</td>
+      <td>Program</td>
+    </tr>
+    <tr>
+      <td>code</td>
+      <td>!code [message]</td>
+      <td>Program</td>
+    </tr>
+    <tr>
+      <td>webhookembed</td>
+      <td>!webhookembed [embed_string]</td>
+      <td><span style=color:#FFDB51;>New! </span>Program</td>
+    </tr>
+    <tr>
+      <td>youtube</td>
+      <td>!youtube [search]</td>
+      <td>Social</td>
+    </tr>
+    <tr>
+      <td>spotify</td>
+      <td>!spotify [search]</td>
+      <td>Social</td>
+    </tr>
+    <tr>
+      <td>streaming</td>
+      <td>!streaming [@member]</td>
+      <td>Social</td>
+    </tr>
+    <tr>
+      <td>listening</td>
+      <td>!listening [@member]</td>
+      <td>Social</td>
+    </tr>
+    <tr>
+      <td>itunesartist</td>
+      <td>!itunesartist [artist]</td>
+      <td><span style=color:#FFDB51;>New! </span>Social</td>
+    </tr>
+    <tr>
+      <td>itunesalbum</td>
+      <td>!itunesalbum [album]</td>
+      <td><span style=color:#FFDB51;>New! </span>Social</td>
+    </tr>
+    <tr>
+      <td>itunessong</td>
+      <td>!itunessong [track]</td>
+      <td><span style=color:#FFDB51;>New! </span>Social</td>
+    </tr>
+    <tr>
+      <td>time</td>
+      <td>!time [country]</td>
+      <td>International</td>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>!country [country]</td>
+      <td>International</td>
+    </tr>
+    <tr>
+      <td>weather</td>
+      <td>!weather [city]</td>
+      <td>International</td>
+    </tr>
+    <tr>
+      <td>flag</td>
+      <td>!flag [country]</td>
+      <td>International</td>
+    </tr>
+    <tr>
+      <td>translate</td>
+      <td>!translate [country_code] [message]</td>
+      <td><span style=color:#FFDB51;>New! </span>International</td>
+    </tr>
+      <tr>
+        <td>8ball</td>
+        <td>!8ball [message]</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>choose</td>
+        <td>!choose [topics]</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>rate</td>
+        <td>!rate [message]</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>echo</td>
+        <td>!echo [times] [message]</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>roll</td>
+        <td>!roll [ndn]</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>ascii</td>
+        <td>!ascii [message]</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>flip</td>
+        <td>!flip</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>l2g</td>
+        <td>!l2g [message]</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>topic</td>
+        <td>!topic</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>calculate</td>
+        <td>!calculate [sum]</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>gif</td>
+        <td>!gif [message]</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>rpc</td>
+        <td>!rpc</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>dailyfact</td>
+        <td>!dailyfact</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>urban</td>
+        <td>!urban [search]</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>combine</td>
+        <td>!combine [name1] [name2]</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>truth</td>
+        <td>!truth</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>dare</td>
+        <td>!dare</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>tod</td>
+        <td>!tod</td>
+        <td>Fun</td>
+      </tr>
+      <tr>
+        <td>ask</td>
+        <td>!ask [message]</td>
+        <td><span style=color:#FFDB51;>New! </span>Fun</td>
+      </tr>
+      <tr>
+        <td>blush</td>
+        <td>!blush</td>
+        <td>Emote</td>
+      </tr>
+      <tr>
+        <td>shy</td>
+        <td>!shy</td>
+        <td>Emote</td>
+      </tr>
+      <tr>
+        <td>cry</td>
+        <td>!cry</td>
+        <td>Emote</td>
+      </tr>
+      <tr>
+        <td>shrug</td>
+        <td>!shrug</td>
+        <td>Emote</td>
+      </tr>
+      <tr>
+        <td>sleepy</td>
+        <td>!sleepy</td>
+        <td>Emote</td>
+      </tr>
+      <tr>
+        <td>happy</td>
+        <td>!happy</td>
+        <td><span style=color:#FFDB51;>New! </span>Emote</td>
+      </tr>
+      <tr>
+        <td>sad</td>
+        <td>!sad</td>
+        <td><span style=color:#FFDB51;>New! </span>Emote</td>
+      </tr>
+      <tr>
+        <td>lol</td>
+        <td>!lol</td>
+        <td><span style=color:#FFDB51;>New! </span>Emote</td>
+      </tr>
+      <tr>
+        <td>upset</td>
+        <td>!upset</td>
+        <td><span style=color:#FFDB51;>New! </span>Emote</td>
+      </tr>
+      <tr>
+        <td>omg</td>
+        <td>!omg</td>
+        <td><span style=color:#FFDB51;>New! </span>Emote</td>
+      </tr>
+      <tr>
+        <td>shock</td>
+        <td>!shock</td>
+        <td><span style=color:#FFDB51;>New! </span>Emote</td>
+      </tr>
+      <tr>
+        <td>think</td>
+        <td>!think</td>
+        <td><span style=color:#FFDB51;>New! </span>Emote</td>
+      </tr>
+      <tr>
+        <td>cold</td>
+        <td>!cold</td>
+        <td><span style=color:#FFDB51;>New! </span>Emote</td>
+      </tr>
+      <tr>
+        <td>warm</td>
+        <td>!warm</td>
+        <td><span style=color:#FFDB51;>New! </span>Emote</td>
+      </tr>
+      <tr>
+        <td>hug</td>
+        <td>!hug [@member] </td>
+        <td>Affection</td>
+      </tr>
+      <tr>
+        <td>cuddle</td>
+        <td>!cuddle [@member] </td>
+        <td>Affection</td>
+      </tr>
+      <tr>
+        <td>kiss</td>
+        <td>!kiss [@member] </td>
+        <td>Affection</td>
+      </tr>
+      <tr>
+        <td>love</td>
+        <td>!love [@member] </td>
+        <td>Affection</td>
+      </tr>
+      <tr>
+        <td>pat</td>
+        <td>!pat [@member] </td>
+        <td>Affection</td>
+      </tr>
+      <tr>
+        <td>slap</td>
+        <td>!slap [@member] </td>
+        <td>Affection</td>
+      </tr>
+      <tr>
+        <td>punch</td>
+        <td>!punch [@member] </td>
+        <td>Affection</td>
+      </tr>
+      <tr>
+        <td>poke</td>
+        <td>!poke [@member] </td>
+        <td>Affection</td>
+      </tr>
+      <tr>
+        <td>wave</td>
+        <td>!wave [@member] </td>
+        <td>Affection</td>
+      </tr>
+      <tr>
+        <td>ship</td>
+        <td>!ship [name1] [name2]</td>
+        <td>Affection</td>
+      </tr>
+      <tr>
+        <td>chase</td>
+        <td>!chase [@member]</td>
+        <td><span style=color:#FFDB51;>New! </span>Affection</td>
+      </tr>
+      <tr>
+        <td>hot</td>
+        <td>!hot [@member]</td>
+        <td><span style=color:#FFDB51;>New! </span>Affection</td>
+      </tr>
+      <tr>
+        <td>pfp</td>
+        <td>!pfp</td>
+        <td>Settings</td>
+      </tr>
+      <tr>
+        <td>username</td>
+        <td>!username</td>
+        <td>Settings</td>
+      </tr>
+      <tr>
+        <td>latency</td>
+        <td>!latency</td>
+        <td>Settings</td>
+      </tr>
+      <tr>
+        <td>play</td>
+        <td>!play [search]</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>playing</td>
+        <td>!playing</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>history</td>
+        <td>!history</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>playhistory</td>
+        <td>!playhistory</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>leave</td>
+        <td>!leave</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>stop</td>
+        <td>!stop</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>pause</td>
+        <td>!pause</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>resume</td>
+        <td>!resume</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>skip</td>
+        <td>!skip [number | optional]</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>voteskip</td>
+        <td>!voteskip</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>move</td>
+        <td>!move [from] [to]</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>remove</td>
+        <td>!remove [number]</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>repeat</td>
+        <td>!repeat</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>shuffle</td>
+        <td>!shuffle</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>queue</td>
+        <td>!queue</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>clearqueue</td>
+        <td>!clearqueue</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>queuetime</td>
+        <td>!queuetime</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>lyrics</td>
+        <td>!lyrics</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>features</td>
+        <td>!features</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>cover</td>
+        <td>!cover</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>loop</td>
+        <td>!loop</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>volume</td>
+        <td>!volume [number]</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>dj</td>
+        <td>!dj [member]</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>restart</td>
+        <td>!restart</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>controller</td>
+        <td>!controller</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <td>set_prefix</td>
+        <td>!set_prefix [prefix]</td>
+        <td><span style=color:#FFDB51;>New! </span>Data</td>
+      </tr>
+      <tr>
+        <td>set_status</td>
+        <td>!set_status [status]</td>
+        <td><span style=color:#FFDB51;>New! </span>Data</td>
+      </tr>
+      <tr>
+        <td>set_activity_message</td>
+        <td>!set_activity_message [message]</td>
+        <td><span style=color:#FFDB51;>New! </span>Data</td>
+      </tr>
+      <tr>
+        <td>set_activity_type</td>
+        <td>!set_activity_type [type]</td>
+        <td><span style=color:#FFDB51;>New! </span>Data</td>
+      </tr>
+      <tr>
+        <td>set_hex</td>
+        <td>!set_hex [#hex]</td>
+        <td><span style=color:#FFDB51;>New! </span>Data</td>
+      </tr>
+      <tr>
+        <td>hex_test</td>
+        <td>!hex_test</td>
+        <td><span style=color:#FFDB51;>New! </span>Data</td>
+      </tr>
+      <tr>
+        <td>setwelcomemessage</td>
+        <td>!setwelcomemessage [message]</td>
+        <td><span style=color:#FF0000;>Currently Removed! </span>Data</td>
+      </tr>
+      <tr>
+        <td>setwelcomechannel</td>
+        <td>!setwelcomechannel [#channel]</td>
+        <td><span style=color:#FF0000;>Currently Removed! </span>Data</td>
+      </tr>
+      <tr>
+        <td>setwelcomerole</td>
+        <td>!setwelcomerole [@role]</td>
+        <td><span style=color:#FF0000;>Currently Removed! </span>Data</td>
+      </tr>
+      <tr>
+        <td>setleavemessage</td>
+        <td>!setleavemessage [message]</td>
+        <td><span style=color:#FF0000;>Currently Removed! </span>Data</td>
+      </tr>
+      <tr>
+        <td>setleavechannel</td>
+        <td>!setleavechannel [#channel]</td>
+        <td><span style=color:#FF0000;>Currently Removed! </span>Data</td>
+      </tr>
+      <tr>
+        <td>reply</td>
+        <td>!reply [message]</td>
+        <td>Modmail</td>
+      </tr>
+      <tr>
+        <td>delete</td>
+        <td>!delete</td>
+        <td>Modmail & Ticket Bot</td>
+      </tr>
+      <tr>
+        <td>dm</td>
+        <td>!dm [@members] [message]</td>
+        <td>Modmail & Ticket Bot</td>
+      </tr>
+      <tr>
+        <td>blacklist</td>
+        <td>!blacklist [@member]</td>
+        <td>Modmail</td>
+      </tr>
+      <tr>
+        <td>whitelist</td>
+        <td>!whitelist [@member]</td>
+        <td>Modmail</td>
+      </tr>
+      <tr>
+        <td>blacklisted</td>
+        <td>!blacklisted</td>
+        <td>Modmail</td>
+      </tr>
+      <tr>
+        <td>areply</td>
+        <td>!areply [message]</td>
+        <td>Modmail</td>
+      </tr>
+      <tr>
+        <td>ticketsetup</td>
+        <td>!ticketsetup</td>
+        <td>Ticket Bot</td>
+      </tr>
+      <tr>
+        <td>adduser</td>
+        <td>!adduser [@member]</td>
+        <td>Ticket Bot</td>
+      </tr>
+      <tr>
+        <td>privatevc</td>
+        <td>!privatevc</td>
+        <td>Create A Vc</td>
+      </tr>
+      <tr>
+        <td>addvc</td>
+        <td>!addvc [@member]</td>
+        <td>Create A Vc</td>
+      </tr>
+      <tr>
+        <td>vclimit</td>
+        <td>!vclimit [number]</td>
+        <td>Create A Vc</td>
+      </tr>
+      <tr>
+        <td>verify</td>
+        <td>!verify</td>
+        <td>Verify</td>
+      </tr>
+      <tr>
+        <td>lockdown</td>
+        <td>!lockdown</td>
+        <td><span style=color:#00FF00;>Comming Soon! </span>Advanced Moderation</td>
+      </tr>
+      <tr>
+        <td>previous</td>
+        <td>!previous</td>
+        <td><span style=color:#00FF00;>Comming Soon! </span>Music</td>
+      </tr>
+      <tr>
+        <td>genius</td>
+        <td>!genius</td>
+        <td><span style=color:#00FF00;>Comming Soon! </span>Social</td>
+      </tr>
+      <tr>
+        <td>playnext</td>
+        <td>!playnext</td>
+        <td><span style=color:#00FF00;>Comming Soon! </span>Music</td>
+      </tr>
+      <tr>
+        <td>getcommands</td>
+        <td>!getcommands</td>
+        <td><span style=color:#00FF00;>Comming Soon! </span>Data</td>
+      </tr>
+      <tr>
+        <td>addcommand</td>
+        <td>!addcommand [command] [message]</td>
+        <td><span style=color:#00FF00;>Comming Soon! </span>Data</td>
+      </tr>
+      <tr>
+        <td>removecommand</td>
+        <td>!removecommand [command]</td>
+        <td><span style=color:#00FF00;>Comming Soon! </span>Data</td>
+      </tr>
+      <tr>
+        <td>editcommand</td>
+        <td>!editcommand [command] [message]</td>
+        <td><span style=color:#00FF00;>Comming Soon! </span>Data</td>
+      </tr>
+      <tr>
+        <td>set_trigger</td>
+        <td>!set_trigger [prefix]</td>
+        <td><span style=color:#00FF00;>Comming Soon! </span>Data</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+
+
+</html>
